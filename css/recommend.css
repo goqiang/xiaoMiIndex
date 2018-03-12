@@ -1,0 +1,85 @@
+#recommend {
+  clear: both;
+  width: 100%;
+  height: 387px;
+  background:#F5F5F5;
+}
+#recoW1226{
+	overflow:hidden;
+	position:relative;
+	height:392px;
+}
+#recommend .recommend1 {
+  height:85px;
+  padding-top:40px;
+  padding-bottom:20px;
+  box-sizing: border-box;
+  position: relative;
+}
+#recommend .recommend1 h1 {
+  float: left;
+}
+#recommend .recommend1 .roket {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+#recommend .recommend1 .roket span {
+  display: inline-block;
+  float: right;
+  width: 36px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border: 1px solid lightgray;
+}
+#recommend .recommend1 .roket span:hover {
+  cursor: pointer;
+  color: #FF4400;
+}
+#recommend .recommend2 {
+  width:300%;
+  position:absolute;
+  left:0px;
+  top:85px;
+  height:300px;
+  transition:2s;
+}
+#recommend .recommend2 li {
+  float: left;
+  margin-right:12px;
+  background: white;
+  width: 234px;
+  height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  animation: 2s;
+}
+#recommend .recommend2 li:last-of-type{
+	  margin-right:0px;
+}
+#recommend .recommend2 li img {
+  height: 140px;
+  width: 140px;
+}
+#recommend .recommend2 li h4 {
+  color: #212121;
+  font-size: 13px;
+}
+#recommend .recommend2 li p {
+  color: #B0B0B0;
+  font-size: 13px;
+}
+#recommend .recommend2 li span {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #FF4400;
+}
+#recommend .recommend2 li:hover {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}

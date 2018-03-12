@@ -1,0 +1,87 @@
+#star{
+      clear:both;
+      width:100%;
+      height:445px;
+      background:white;
+      .star1{
+          height:85px;
+          padding-top:40px;
+          padding-bottom:20px;
+          box-sizing:border-box;
+          position:relative;
+          h1{
+            float:left;  
+          } 
+          .roket{
+                overflow:hidden;
+                position:absolute;
+                right:0px;
+                bottom:10px;
+             span{
+              display: inline-block;
+              float:right;                      
+              width:36px;
+              height:24px;
+              text-align: center;
+              line-height:24px;
+              border:1px solid lightgray;
+              &:hover{cursor: pointer;}
+              &.starNow{
+                  color:#FF4400!important;
+              }
+          } 
+          }
+          
+      }
+      .star2{
+             position:absolute;
+             top:85px;
+             left:-1226px;
+             width:300%;
+             height:340px; 
+             transition:left 2s;            
+          li{
+              float:left;
+              margin-right:11px;
+              background:#FAFAFA;
+              width:234px;
+              height:340px;
+              box-sizing: border-box;
+              text-align: center;
+              padding-top:50px;
+              padding-bottom:40px; 
+              &:nth-of-type(5n+1){
+                 border-top: 1px solid red;
+              }
+              &:nth-of-type(5n+2){
+                 border-top: 1px solid green;
+              }
+              &:nth-of-type(5n+3){
+                 border-top: 1px solid blue;
+              }
+              &:nth-of-type(5n+4){
+                 border-top: 1px solid orangered;
+              }
+              &:nth-of-type(5n+5){
+                 border-top: 1px solid lightblue;
+              }
+              &:nth-last-of-type{
+                 margin-right:0px;
+              }             
+              img{
+                 height:160px;                  
+              }
+              h4{
+                  color: #212121;
+                  font-size:13px;
+              }
+              p{
+                  color:#B0B0B0;
+                  font-size:12px;
+              }
+              span{
+                  color:#FF4400;
+              }
+          }
+      }
+}

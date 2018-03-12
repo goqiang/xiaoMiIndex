@@ -1,0 +1,112 @@
+/*顶部导航栏*/
+
+header .top1 {
+	background: #333;
+	height: 40px;
+}
+
+.top1 .top1_left{
+	float: left;
+	height: 100%;
+	margin-left: 10px;
+}
+
+.top1 div:nth-of-type(2) {
+	margin-right: 15px;
+	float: right;
+}
+
+header .top1 a {
+	display: inline-block;
+	height: 100%;
+	line-height: 40px;
+	color: lightgrey;
+	font-size: 12px;
+}
+/*购物车.start*/
+nav#cart {
+	position: relative;
+	width: 122px;
+	height: 40px;
+	display: inline-block;
+}
+
+nav#cart:hover {
+	background: white;
+}
+.subCart{
+	width:300px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	height:0px;
+	font-size: 13px;
+	text-align: center;
+	line-height:90px;
+	position: absolute;
+	right: -5px;
+	background: white;
+	transition: 0.7s;
+	z-index:40;
+	overflow:hidden;
+}
+nav#cart:hover .subCart{
+	height:90px;
+}
+
+nav#cart a.cart {
+	display: block;
+	width: 100%;
+	height: 100%;
+	transition: 0.1s 1s;
+	text-align:center;
+}
+
+nav#cart:hover a.cart {
+	transition: 0.1s;
+	color: #ff4400;
+	background: white;
+}
+/*购物车.end*/
+
+header .top1 a::after {
+	content: "|";
+	color: #374237;
+	padding: 0px 0px 0px 5px;
+}
+
+.top1_left a:last-child::after,
+.top1_right a:last-child::after,
+.top1_right a:nth-last-child(2)::after {
+	display: none;
+}
+
+header .top1 .top1_right a:last-child {
+	margin-left: 17px;
+	display: inline-block;
+	height: 100%;
+	width: 120px;
+	background: #424242;
+	text-align: center;
+}
+
+header .top1 i{
+	vertical-align: middle;
+	margin-right:5px;
+	font-size:20px;	
+	/*line-height:50px;*/
+	margin-bottom:3px;
+	display:inline-block;
+}
+header .top1 a:hover {
+	color: white;
+}
+
+header .top1 a:nth-of-type(1) {
+	margin-left: 5px;
+}
+
+div.top2 {
+	width: 100%;
+	height: 244px;
+	background: url(../img/1.png) no-repeat center;
+	background-size: cover;
+}

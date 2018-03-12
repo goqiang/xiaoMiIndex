@@ -1,0 +1,88 @@
+#star {
+  clear: both;
+  width: 100%;
+  height: 445px;
+  background: white;
+}
+#star .star1 {
+  height: 85px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+#star .star1 h1 {
+  float: left;
+}
+#star .star1 .roket {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+#star .star1 .roket span {
+  display: inline-block;
+  float: right;
+  width: 36px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  border: 1px solid lightgray;
+}
+#star .star1 .roket span:hover {
+  cursor: pointer;
+}
+#star .star1 .roket span.starNow {
+  color: #FF4400!important;
+}
+#star .star2 {
+  position: absolute;
+  top: 85px;
+  left: -1226px;
+  width: 300%;
+  height: 340px;
+  transition: left 2s;
+}
+#star .star2 li {
+  float: left;
+  margin-right: 11px;
+  background: #FAFAFA;
+  width: 234px;
+  height: 340px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+#star .star2 li:nth-of-type(5n+1) {
+  border-top: 1px solid red;
+}
+#star .star2 li:nth-of-type(5n+2) {
+  border-top: 1px solid green;
+}
+#star .star2 li:nth-of-type(5n+3) {
+  border-top: 1px solid blue;
+}
+#star .star2 li:nth-of-type(5n+4) {
+  border-top: 1px solid orangered;
+}
+#star .star2 li:nth-of-type(5n+5) {
+  border-top: 1px solid lightblue;
+}
+#star .star2 li:nth-last-of-type {
+  margin-right: 0px;
+}
+#star .star2 li img {
+  height: 160px;
+}
+#star .star2 li h4 {
+  color: #212121;
+  font-size: 13px;
+}
+#star .star2 li p {
+  color: #B0B0B0;
+  font-size: 12px;
+}
+#star .star2 li span {
+  color: #FF4400;
+}

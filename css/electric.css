@@ -1,0 +1,164 @@
+#electric {
+  width: 100%;
+  background: #F5F5F5;
+  margin-top: 30px;
+}
+#electric .elec1 {
+  height: 120px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  padding-top: 70px;
+  overflow: hidden;
+}
+#electric .elec1 h1 {
+  float: left;
+  color: #333;
+}
+#electric .elec1 .elec2{
+  float:right;
+  width:243px;
+  height:100%;
+}
+#electric .elec1 .elec2 li {
+  float:left;
+  display:inline-block;
+  margin-right:27px;
+}
+#electric .elec1 .elec2 li:last-of-type{
+  margin-right:0px;
+}
+#electric .elec1 .elec2 li a {
+  color: #333;
+  font-weight: 400;
+}
+#electric .elec1 .elec2 li:hover,
+#electric .elec1 .elec2 li.liNow {
+  border-bottom: 2px solid #FF4400;
+}
+#electric .elec1 .elec2 li:hover a,
+#electric .elec1 .elec2 li.liNow a {
+  color: #ff4400;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+#electric .elec1_cont {
+  height: 614px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#electric .elec1_cont .elec1_cont_left {
+  float: left;
+  margin-right: 13px;
+  height: 614px;
+  animation: 1s;
+}
+#electric .elec1_cont .elec1_cont_left img {
+  width: 234px;
+  height: 614px;
+}
+#electric .elec1_cont .elec1_cont_left:hover img {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+#electric .elec1_cont .elec1_cont_right {
+  float: left;
+  overflow: hidden;
+  width: 975px;
+}
+#electric .elec1_cont .elec1_cont_right li {
+  float: left;
+  height: 299px;
+  width: 24%;
+  background: white;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  margin-right: 13px;
+  margin-bottom: 15px;
+  animation: 2s;
+  overflow: hidden;
+}
+#electric .elec1_cont .elec1_cont_right li .decide {
+  width: 100%;
+  height: 77px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 13px;
+  position: absolute;
+  left: 0px;
+  bottom: -77px;
+  z-index: 99;
+  background: #FF4400;
+  transition: 2s;
+}
+#electric .elec1_cont .elec1_cont_right li .decide p {
+  color: white!important;
+}
+#electric .elec1_cont .elec1_cont_right li .decide span {
+  color: #B0B0B0!important;
+}
+#electric .elec1_cont .elec1_cont_right li:nth-of-type(4n+4) {
+  margin-right: 0px;
+}
+#electric .elec1_cont .elec1_cont_right li:nth-of-type(5),
+#electric .elec1_cont .elec1_cont_right li:nth-of-type(6),
+#electric .elec1_cont .elec1_cont_right li:nth-of-type(7),
+#electric .elec1_cont .elec1_cont_right li:nth-of-type(8) {
+  margin-bottomt: 0px;
+}
+#electric .elec1_cont .elec1_cont_right li:hover {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+#electric .elec1_cont .elec1_cont_right li:hover .decide {
+  cursor: pointer;
+  bottom: 0px;
+}
+#electric .elec1_cont .elec1_cont_right .box {
+  height: 100%;
+}
+#electric .elec1_cont .elec1_cont_right img {
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#electric .elec1_cont .elec1_cont_right span.discount {
+  position: absolute;
+  top: 0;
+  left: 84px;
+  display: block;
+  background: #E53935;
+  color: white;
+  text-align: center;
+  width: 66px;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+#electric .elec1_cont .elec1_cont_right h4 {
+  color: #333;
+  font-size: 14px;
+}
+#electric .elec1_cont .elec1_cont_right p {
+  margin-top: 5px;
+  color: #B0B0B0;
+  font-size: 13px;
+}
+#electric .elec1_cont .elec1_cont_right span {
+  font-size: 13px;
+  color: #FF4400;
+}
+#electric .elec1_cont .elec1_cont_right span.lowPrice {
+  text-decoration: line-through;
+  color: #B0B0B0;
+}
+
+/*选项卡*/
+.aStyle{
+	color:#FF4400;
+}
+.liStyle{
+	border-bottom:2px solid #FF4400;
+	
+}
