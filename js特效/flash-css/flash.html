@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="flash.css" />
+		<!--<script src="jquery-3.2.1.js"></script>-->
+	</head>
+
+	<body>
+
+		<!--
+分析功能：
+1、左右箭头切换图功能
+	切换小圆点。
+	onclick
+	
+2、单击小原点时候也能换图
+	点击哪个小圆点，哪个小圆点对应图片显示。
+	onclick 
+
+3、淡入淡出效果。
+   opacity
+   transition
+
+	
+-->
+		<div id="flash">
+			<ul>
+				<li class="now">A</li>
+				<li>B</li>
+				<li>C</li>
+			</ul>
+			<ol>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+			<nav>
+				<a href="#"> &lt; </a>
+				<a href="#"> &gt; </a>
+			</nav>
+		</div>
+		<script>
+			var as = document.querySelectorAll("nav a");
+			var lis = document.querySelectorAll("ul li");
+			var lisx = document.querySelectorAll("ol li");
+			var flash = document.querySelector("#flash");
+			var i = 0,
+				timer,
+				Interval = 2000;
+			//点击左边按钮
+			as[0].onclick = function() {
+				i--;
+				(i < 0) ? (i = lis.length - 1) : null;
+				Inti(i);
+			}
+			//点击右边按钮
+			as[1].onclick = function() {
+					i++;
+					(i == lis.length) ? (i = 0) : null;
+					Inti(i);
+				}
+				//通过点击点来切换幻灯片
+				! function() {
+					for(var k = 0; k < lisx.length; k++) {
+						lisx[k].index = k;
+						lisx[k].onclick = cirlc;
+						function cirlc(){
+							i = this.index;
+                            Inti(i);
+						};
+					}
+				}()
+			//初始化图片与圆圈
+			function Inti(i) {
+				for(var j = 0; j < lis.length; j++) {
+					lis[j].className = "";
+					lisx[j].className = "";
+				}
+				lis[i].className = "now";
+				lisx[i].className = "nowx";
+			}
+			//自动播放
+			function Next() {
+				i++;
+				(i == lis.length) ? (i = 0) : null;
+				Inti(i);
+			}
+			timer = setInterval(Next, Interval);
+			flash.addEventListener("mouseover", function() {
+				clearInterval(timer);
+			}, false)
+			flash.addEventListener("mouseout", function() {
+				timer = setInterval(Next, Interval);
+			}, false)
+		</script>
+	</body>
+
+</html>

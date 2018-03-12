@@ -1,0 +1,104 @@
+/*
+ CSS重置
+ * */
+
+body,
+ul,
+ol {
+	margin: 0px;
+	padding: 0px;
+}
+
+#flash {
+	width: 600px;
+	height: 300px;
+	margin: 100px;
+	position: relative;
+}
+
+
+/*图片css*/
+
+ul,
+ol {
+	list-style: none;
+}
+
+ul li {
+	width: 600px;
+	height: 300px;
+	position: absolute;
+	top: 0px;
+	left:0px;
+	opacity:0;
+	transition:1s;
+}
+ul li.now{
+	opacity:1;
+	z-index:99;	
+}
+
+ul li:nth-of-type(1) {
+	background: green;
+}
+
+ul li:nth-of-type(2) {
+	background: blue;
+}
+
+ul li:nth-of-type(3) {
+	background: red;
+}
+
+
+/*箭头css*/
+
+nav a {
+	position: absolute;
+	top: 100px;
+	z-index:999;
+	font-size: 36px;
+	width: 40px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background: #333;
+	color: white;
+}
+
+nav a:nth-of-type(1) {
+	left: 0px;
+}
+
+nav a:nth-of-type(2) {
+	right: 0px;
+}
+
+
+/*原点css*/
+
+ol {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	z-index:999;
+}
+
+ol li{
+	float: left;
+	width: 12px;
+	height: 12px;
+	border: 2px solid white;
+	background: gray;
+	border-radius: 50%;
+	margin: 0px 5px;
+}
+ol li.nowx{
+	border:1px solid red;
+	background:white;
+	box-shadow:0px 0px 3px black;
+}
